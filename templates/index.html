@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Gravador de Áudio</title>
+</head>
+<body>
+    <h1>Identificador de Verbos</h1>
+    <button id="startRecord">Iniciar Gravação</button>
+    <button id="stopRecord" disabled>Parar Gravação</button>
+    <button id="sendAudio" disabled>Enviar Áudio</button>
+    <br>
+    <br>
+    <div>
+        <audio id="audioPlayer" controls></audio>
+    </div>
+    <br>
+    <br>
+    <div id="loadingIndicator" class="hidden">
+        <i class="fas fa-spinner fa-spin"></i>
+        <span>Calculando...</span>
+    </div>
+    <br>
+    <br>
+    <div id="resultText">
+        <h3>Texto Alvo</h3>
+        <span id="resultTextContent"></span>
+    </div>
+    <div id="resultVerbs">
+        <h3>Verbos Encontrados</h3>
+        <span id="resultVerbsContent"></span>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
