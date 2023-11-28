@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#loadingIndicator {
+    display: block;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#loadingIndicator i {
+    margin-right: 5px;
+}
+
+#loadingIndicator span {
+    font-size: 14px;
+}
+
+#resultText {
+    display: none;
+}
+
+#resultVerbs {
+    display: none;
+}
